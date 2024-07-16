@@ -12,8 +12,8 @@ exports.mailTransport = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'kiana.fahey@ethereal.email',
-        pass: 'RFEE8Akg1ReMUCcawk'
+        user: process.env.SMTP_USERNAME,
+        pass: process.env.SMTP_PASSWORD
     }
 });
 
